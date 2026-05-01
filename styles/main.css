@@ -1,63 +1,7 @@
+@import './common.css';
 @import './header.css';
 @import './banner.css';
 @import './footer.css';
-
-
-
-
-/* h1 tag => 1 */ 
-/* .h1 class => 10 */
-/* #h1 id => 100 */
-
-/* 100 */
-/* #benefits-id {
-    background-color: red;
-} */
-
-/* 1 + 10 */
-/* section .benefits-title {
-    background-color: aqua;
-} */
-
-/* 10 */
-/* body .benefits-title {
-    background-color: blue;
-} */
-
-/* h2 {
-    background-color: green !important;
-} */
-
-.button {
-    width: 80px;
-    height: 40px;
-    cursor: pointer;
-    background-color: black;
-    color: thistle;
-}
-
-.button:hover,
-.button:focus {
-    background-color: #d8bfd8;
-    color: black;
-}
-
-.button:active {
-    background-color: blue;
-    color: yellow;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

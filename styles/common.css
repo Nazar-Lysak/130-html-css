@@ -1,0 +1,39 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #111111;
+    background-color: #FAFAFA;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+/* h1 */
+.main-title {
+    
+}
+
+/* h2 */
+.section-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.color-accent {
+    color: #FD9222;
+}
+
+/* tag = 1 */
+/* class = 10 */
+/* id = 100 */
+

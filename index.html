@@ -3,28 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/main.css">
-    <title>Simply Chocolate</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
+
+    <link rel="stylesheet" href="./styles/main.css" />
+    
+    <title>Simply Chocolate</title>
   </head>
   <body>
-    <button class="button">CLICK</button>
     <!-- #region header -->
-    <header>
-      <a href="./index.html">
-        SIMPLY CHOCOLATE
+    <header class="page-header">
+      <a href="./index.html" class="header-logo">
+        <span>simply</span> chocolate
         <img src="" alt="logo" />
       </a>
-      <nav>
-        <ul>
-          <li>
-            <a href="">Home</a>
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-item">
+            <a href="" class="header-nav-link">Home</a>
           </li>
-          <li>
-            <a href="#section-made">How it’s made?</a>
+          <li class="header-nav-item">
+            <a href="#section-made" class="header-nav-link">How it’s made?</a>
           </li>
-          <li>
-            <a href="#section-feedback">Chocolate is loved</a>
+          <li class="header-nav-item">
+            <a href="#section-feedback" class="header-nav-link">Chocolate is loved</a>
           </li>
         </ul>
       </nav>
@@ -60,13 +66,13 @@
         <a href="">
           scroll down
           <img src="" alt="icon" />
-        </a>          
+        </a>
       </section>
       <!-- #endregion banner -->
 
       <!-- #region benefits -->
-      <section>
-        <h2 class="benefits-title" id="benefits-id">Benefits</h2>
+      <section id="section-benefits">
+        <h2 class="section-title">Benefits</h2>
         <ul>
           <li>
             <img src="" alt="" />
@@ -105,35 +111,69 @@
 
       <!-- #region taste -->
       <section>
-        <h2>It all adds up to one exceptional taste sensation</h2>
+        <h2 class="section-title">It all adds up to one exceptional <span class="color-accent">taste</span> sensation</h2>
         <ul>
-
           <li>
-            <img src="./images/taste/chocolate.png" alt="Milk chocolate" height="160" width="212" />
+            <img
+              src="./images/taste/chocolate.png"
+              alt="Milk chocolate"
+              height="160"
+              width="212"
+            />
             <p>Milk chocolate</p>
           </li>
           <li>
-            <img src="./images/taste/milk.png" alt="milk" height="160" width="212" />
+            <img
+              src="./images/taste/milk.png"
+              alt="milk"
+              height="160"
+              width="212"
+            />
             <p>Milk</p>
           </li>
           <li>
-            <img src="./images/taste/hazelnut.png" alt="nuts" height="160" width="212" />
+            <img
+              src="./images/taste/hazelnut.png"
+              alt="nuts"
+              height="160"
+              width="212"
+            />
             <p>Nuts</p>
           </li>
           <li>
-            <img src="./images/taste/coffe-grain.png" alt="semi-sweet chocolate" height="160" width="212" />
+            <img
+              src="./images/taste/coffe-grain.png"
+              alt="semi-sweet chocolate"
+              height="160"
+              width="212"
+            />
             <p>Semi-Sweet Chocolate</p>
           </li>
           <li>
-            <img src="./images/taste/cacao-beans.png" alt="cacao" height="160" width="212" />
+            <img
+              src="./images/taste/cacao-beans.png"
+              alt="cacao"
+              height="160"
+              width="212"
+            />
             <p>Cacao</p>
           </li>
           <li>
-            <img src="./images/taste/raspbery.png" alt="raspberry" height="160" width="212" />
+            <img
+              src="./images/taste/raspbery.png"
+              alt="raspberry"
+              height="160"
+              width="212"
+            />
             <p>Raspberry</p>
           </li>
           <li>
-            <img src="./images/taste/coconut.png" alt="coconut oil" height="160" width="212" />
+            <img
+              src="./images/taste/coconut.png"
+              alt="coconut oil"
+              height="160"
+              width="212"
+            />
             <p>Coconut Oil</p>
           </li>
         </ul>
@@ -142,8 +182,13 @@
 
       <!-- #region made -->
       <section id="section-made">
-        <h2>How it’s made?</h2>
-        <img src="./images/made/made.jpg" alt="How it’s made" height="400" width="600" />
+        <h2 class="section-title">How it’s <span class="color-accent">made?</span></h2>
+        <img
+          src="./images/made/made.jpg"
+          alt="How it’s made"
+          height="400"
+          width="600"
+        />
         <h3>
           Try our chocolates today and discover the perfect balance of flavor
         </h3>
@@ -170,10 +215,15 @@
 
       <!-- #region feedback -->
       <section id="section-feedback">
-        <h2>Chocolate is loved</h2>
+        <h2 class="section-title"><span class="color-accent">Chocolate</span> is loved</h2>
         <ul>
           <li>
-            <img src="./images/feedback/viktoria-dabrzanska.png" alt="Victoria Dobrzhanska" height="80" width="80" />
+            <img
+              src="./images/feedback/viktoria-dabrzanska.png"
+              alt="Victoria Dobrzhanska"
+              height="80"
+              width="80"
+            />
             <h3>Victoria Dobrzhanska</h3>
             <p>
               I love this chocolate bar. Perfect combination of light crispy
@@ -181,7 +231,12 @@
             </p>
           </li>
           <li>
-            <img src="./images/feedback/nazar-bobenko.png" alt="Nazar Babenko" height="80" width="80" />
+            <img
+              src="./images/feedback/nazar-bobenko.png"
+              alt="Nazar Babenko"
+              height="80"
+              width="80"
+            />
             <h3>Nazar Babenko</h3>
             <p>
               This chocolate confection is a delight! A delight! The wafer is
@@ -190,7 +245,12 @@
             </p>
           </li>
           <li>
-            <img src="./images/feedback/olena-kampush.png" alt="Olena Kampusch" height="80" width="80" />
+            <img
+              src="./images/feedback/olena-kampush.png"
+              alt="Olena Kampusch"
+              height="80"
+              width="80"
+            />
             <h3>Olena Kampusch</h3>
             <p>
               Chocolate is a family favourite treat. Love the delicious smooth
@@ -257,4 +317,4 @@
     </footer>
     <!-- #endregion footer -->
   </body>
-</html> 
+</html>
