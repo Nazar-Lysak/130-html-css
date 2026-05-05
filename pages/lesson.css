@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.article-list li {
+    background-color: bisque;
+    border: solid black 1px;
+    padding: 10px 20px;
+}
+
+.article-list li:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+
