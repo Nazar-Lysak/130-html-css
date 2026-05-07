@@ -1,0 +1,41 @@
+.section-taste {
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.section-taste .section-title {
+    max-width: 412px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.taste-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.taste-list-item {
+    border: solid 1px #FD9222;
+    border-radius: 15px;
+    padding: 28px 24px;
+    width: calc((100% - 96px)/4);
+    color: #FFFFFF;
+}
+
+.taste-list-item:nth-child(even) {
+    background-color: #FFFFFF;
+    color: #1E1823;
+}
+
+.taste-list-item:nth-child(4n + 1) {
+    background-color: #FD9222;
+}
+
+.taste-list-item:nth-child(4n + 3) {
+    background-color: #1E1823;
+}
+
+.taste-list-item img {
+    margin-bottom: 36px;
+}
