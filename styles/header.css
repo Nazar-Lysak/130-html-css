@@ -4,7 +4,6 @@
     align-items: center;
 }
 
-
 .header-logo {
     font-weight: 700;
     font-size: 18px;
@@ -12,6 +11,9 @@
     letter-spacing: -0.03em;
     text-transform: uppercase;
     display: flex;
+    align-items: center;
+    fill: transparent;
+    stroke: #FD9222;
 }
 
 .header-logo span {
@@ -50,4 +52,26 @@
 
 .social-list {
     display: flex;
+    gap: 14px;
 }
+
+.social-link {
+    fill: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: rgba(17, 17, 17, 0.1) solid 1px;
+    background-color: royalblue;
+    border-radius: 16px;
+    width: 40px;
+    height: 40px;
+}
+
+.social-link:hover,
+.social-link:focus {
+    fill: #FD9222;
+    background-color: violet;
+    border-color: rgba(55, 255, 0, 0.5);
+}
+
+
