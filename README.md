@@ -107,7 +107,7 @@
 ## 🧰 SVG-спрайт
 
 - Генерація через: [icomoon.io/app](https://icomoon.io/app/)
-- Оптимізація SVG: [svgomg.net](https://svgomg.net/)
+- Оптимізація SVG: [svgomg.net](https://codebeautify.org/svg-formatter-beautifier#)
 
 -   `<svg class="class-name" width="24" height="24">`
         `<use href="./sprite.svg#icon-instagram"></use>`
