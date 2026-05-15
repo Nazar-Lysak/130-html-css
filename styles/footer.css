@@ -1,3 +1,5 @@
-footer {
-    background-color: salmon;
+.page-footer {
+    background-color: #1E1823;
+    color: #fff;
+    padding: 50px 0;
 }

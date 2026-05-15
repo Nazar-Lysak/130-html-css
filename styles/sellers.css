@@ -1,0 +1,58 @@
+.section-sellers {
+    padding: 50px 0;
+}
+
+.top-sellers-list {
+    display: flex;
+    column-gap: 16px;
+}
+
+.top-sellers-list-item {
+    width: calc((100% - 32px) / 3);
+    cursor: pointer;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.top-sellers-list-item-content {
+    position: relative;
+    overflow: hidden;
+}
+
+.top-sellers-list-item:hover {
+    box-shadow: 0 4px 10px 0 rgba(30, 24, 35, 0.2);
+}
+
+.top-sellers-list-item:hover .top-sellers-list-item-text {
+    transform: translateY(0);
+}
+
+.top-sellers-list-item-title {
+    font-weight: 600;
+    padding: 28px;
+    font-size: 18px;
+    line-height: 1.33333;
+    text-transform: uppercase;
+    text-align: center;
+    border-left: solid 1px rgba(17, 17, 17, 0.1);
+    border-right: solid 1px rgba(17, 17, 17, 0.1);
+    border-bottom: solid 1px rgba(17, 17, 17, 0.1);
+    border-radius: 0 0 16px 16px;
+}
+
+.top-sellers-list-item-text {
+    position: absolute;
+    color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(16px);
+    background-color: linear-gradient(161deg, rgba(253, 253, 255, 0.1) 0%, rgba(8, 2, 21, 0.1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    transform: translateY(100%);
+    transition: transform 250ms linear;
+}

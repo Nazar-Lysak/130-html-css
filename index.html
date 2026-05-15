@@ -19,21 +19,21 @@
     <header class="page-header">
       <div class="container header-container">
         <a href="./pages/lesson.html" class="header-logo">
-          <span>simply</span> chocolate
-          <svg height="24" width="24">
+          <span>simply</span>&nbsp;chocolate
+          <svg height="24" width="24" class="header-logo-icon">
             <use href="./images/sprite.svg#icon-chocolate"></use>
           </svg>
         </a>
         <nav class="header-nav">
           <ul class="header-nav-list">
             <li class="header-nav-item">
-              <a href="" class="header-nav-link">Home</a>
+              <a href="" class="header-nav-link ">Home</a>
             </li>
             <li class="header-nav-item">
-              <a href="#section-made" class="header-nav-link">How it’s made?</a>
+              <a href="#section-made" class="header-nav-link ">How it’s made?</a>
             </li>
             <li class="header-nav-item">
-              <a href="#section-feedback" class="header-nav-link">Chocolate is loved</a>
+              <a href="#section-feedback" class="header-nav-link nav-active-link">Chocolate is loved</a>
             </li>
           </ul>
         </nav>
@@ -67,7 +67,7 @@
     <main>
       <!-- #region banner --> 
       <section id="section-banner">
-        <div class="container">
+        <div class="container banner-container">
           <h1 class="main-title">
             Treat yourself or a loved one to our finest ingredients for a moment
             of pure delight!
@@ -230,62 +230,114 @@
         </div>
       </section>
       <!-- #endregion made -->
+     
+      <!-- #region top sellers -->
+      <section id="section-sellers" class="section-sellers">
+        <div class="container">
+          <h2 class="section-title"><span class="color-accent">Top</span> sellers</h2>
+          <ul class="top-sellers-list">
+
+
+            <li class="top-sellers-list-item">
+
+              <div class="top-sellers-list-item-content">
+                <img
+                  src="./images/top-sellers/chocolate-with-nuts.jpg" alt="Chocolate with nuts" height="464" width="368"
+                />
+                <p class="top-sellers-list-item-text">
+                  Chocolate with fruit is an unbeatable combination of two of the tastiest things in the world. This dessert combines delicate and aromatic chocolate with fresh and juicy fruits, creating a true poetry of taste.
+                </p>
+              </div>
+
+              <h3 class="top-sellers-list-item-title">
+                Chocolate with nuts
+              </h3>
+            </li>
+
+
+            <li class="top-sellers-list-item">
+              <div class="top-sellers-list-item-content">
+                <img src="./images/top-sellers/chocolate-with-fruits.jpg" alt="Chocolate with fruits" height="464" width="368" />
+                <p class="top-sellers-list-item-text">
+                  Chocolate with fruit is an unbeatable combination of two of the tastiest things in the world. This dessert combines delicate and aromatic chocolate with fresh and juicy fruits, creating a true poetry of taste.
+                </p>
+              </div>
+              <h3 class="top-sellers-list-item-title">Chocolate with fruits</h3>  
+            </li>
+            <li class="top-sellers-list-item">
+
+              <div class="top-sellers-list-item-content">
+                <img src="./images/top-sellers/dark-chocolate.jpg" alt="Dark Chocolate" height="464" width="368" />
+                <p class="top-sellers-list-item-text">
+                  Dark chocolate is a true delight for chocolate lovers. It has a rich and intense flavor that captivates the senses and leaves an unforgettable aftertaste. With its deep cocoa notes and subtle bitterness, dark chocolate offers a unique and sophisticated taste experience that is both indulgent and satisfying.
+                </p>
+              </div>
+              <h3 class="top-sellers-list-item-title">Dark Chocolate</h3>
+            </li>
+          </ul>
+
+        </div>
+      </section>
+      <!-- #endregion top sellers -->
 
       <!-- #region feedback -->
-      <section id="section-feedback">
+      <section id="section-feedback" class="section-feedback">
         <div class="container">
           <h2 class="section-title"><span class="color-accent">Chocolate</span> is loved</h2>
-          <ul>
-            <li>
+          <ul class="feedback-list">
+            <li class="feedback-list-item">
               <img
                 src="./images/feedback/viktoria-dabrzanska.png"
                 alt="Victoria Dobrzhanska"
                 height="80"
                 width="80"
+                class="feedback-list-item-avatar"
               />
-              <h3>Victoria Dobrzhanska</h3>
-              <p>
+              <h3 class="feedback-list-item-title">Victoria Dobrzhanska</h3>
+              <p class="feedback-list-item-text">
                 I love this chocolate bar. Perfect combination of light crispy
                 wafer, covered in a thin layer chocolate.
               </p>
             </li>
-            <li>
+            <li class="feedback-list-item">
               <img
                 src="./images/feedback/nazar-bobenko.png"
                 alt="Nazar Babenko"
                 height="80"
                 width="80"
+                class="feedback-list-item-avatar"
               />
-              <h3>Nazar Babenko</h3>
-              <p>
+              <h3 class="feedback-list-item-title">Nazar Babenko</h3>
+              <p class="feedback-list-item-text">
                 This chocolate confection is a delight! A delight! The wafer is
                 light and crisp, the hazelnut cream is smooth, and the chocolate
                 is good.
               </p>
             </li>
-            <li>
+            <li class="feedback-list-item">
               <img
                 src="./images/feedback/olena-kampush.png"
                 alt="Olena Kampusch"
                 height="80"
                 width="80"
+                class="feedback-list-item-avatar"
               />
-              <h3>Olena Kampusch</h3>
-              <p>
+              <h3 class="feedback-list-item-title">Olena Kampusch</h3>
+              <p class="feedback-list-item-text">
                 Chocolate is a family favourite treat. Love the delicious smooth
                 chocolate and the creaminess inside. The wafer is soft but
                 crunchy.
               </p>
             </li>
           </ul>
-          <button type="button">Leave a review</button>
+          <button class="feedback-list-item-button" type="button">Leave a review</button>
         </div>
       </section>
       <!-- #endregion feedback -->
     </main>
 
     <!-- #region footer -->
-    <footer>
+    <footer class="page-footer">
       <div class="container">
         <p>Chocolate a delicious cure for a bad day</p>
         <p>Social networks</p>

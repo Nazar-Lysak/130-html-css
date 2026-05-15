@@ -1,0 +1,42 @@
+.section-feedback {
+    padding: 50px 0;
+    margin-bottom: 70px;
+}
+
+.feedback-list {
+    display: flex;
+    column-gap: 28px;
+    margin-bottom: 114px;
+}
+
+.feedback-list-item {
+    position: relative;
+    width: calc((100% - 56px) / 3);
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    box-shadow: 0 4px 10px 0 rgba(17, 17, 17, 0.1);
+    padding: 56px 24px 42px;
+    border-radius: 16px;
+}
+
+.feedback-list-item-avatar {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.feedback-list-item-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;  
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.feedback-list-item-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
