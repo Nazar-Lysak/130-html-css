@@ -7,14 +7,104 @@
     <title>Lesson</title>
   </head>
   <body class="container">
-    <h1 class="child">Декоративні елементи</h1>
-    <!-- <div class="wrapper-box">
-      <div class="box red">1</div>
-      <div class="box blue">2</div>
-      <div class="box orange">3</div>
-    </div> -->
+    <h1 class="child">Форми</h1>
 
-      <button class="btn">Кнопка 1</button>
+    <form class="form-class">
+
+      <label for="form-name" class="label-class">Name<span class="required-color">*</span></label>
+      <input 
+        type="text" 
+        id="form-name" 
+        class="input-class"
+        placeholder="Serhii"
+        name="name"
+        required
+        title="заповніть поле"
+      >
+
+      <label for="form-phone" class="label-class">Phone<span class="required-color">*</span></label>
+      <input 
+        type="tel"
+        class="input-class"
+        id="form-phone"
+        placeholder="380-111-11-11"
+        name="phone"
+        required
+        title="xxx-xxx-xx-xx"
+      >
+
+      <label for="form-email" class="label-class">Email<span class="required-color">*</span></label>
+      <input 
+        type="email"
+        class="input-class"
+        id="form-email"
+        name="email"
+        placeholder="example@example.com"
+        required
+      >
+
+      <fieldset class="fieldset-group">
+        <legend>Sizes</legend>
+        <ul>
+          <li>
+            <label for="form-size-small">Small</label>
+            <input type="radio" id="form-size-small" name="size" value="s">
+          </li>
+          <li>
+            <label for="form-size-medium">Medium</label>
+            <input type="radio" id="form-size-medium" name="size" value="m" checked>
+          </li>
+          <li>
+            <label for="form-size-large">Large</label>
+            <input type="radio" id="form-size-large" name="size" value="l">
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="fieldset-group">
+        <legend>ingridients</legend>
+        <ul>
+          <li>
+            <label for="form-ingridient-tomato">Tomato</label>
+            <input type="checkbox" id="form-ingridient-tomato" name="ingridients" value="tomato">
+          </li>
+           <li>
+            <label for="form-ingridient-cheese">Cheese</label>
+            <input type="checkbox" id="form-ingridient-cheese" name="ingridients" value="cheese">
+          </li>
+           <li>
+            <label for="form-ingridient-meat">Meat</label>
+            <input type="checkbox" id="form-ingridient-meat" name="ingridients" value="meat">
+          </li>
+        </ul>
+      </fieldset>
+
+      <label for="form-textarea" class="label-class">Comment</label>
+      <textarea 
+        name="comment" 
+        id="form-textarea" 
+        class="textarea" 
+        placeholder="Leave comment here" 
+        rows="4"
+      ></textarea>
+
+      <select name="city">
+        <optgroup label="West">
+          <option value="lviv">Lviv</option>
+          <option value="ternopil">Ternopil</option>
+        </optgroup>
+        
+        <option value="odesa">Odesa</option>
+        <option value="sambir">Sambir</option>
+      </select>
+
+      <div class="btn-container">
+        <button class="btn btn-submit" type="submit">Submit</button>
+        <button class="btn btn-reset" type="reset">Reset</button>
+      </div>
+      
+    </form>
 
   </body>
 </html>
+
