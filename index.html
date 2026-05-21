@@ -390,5 +390,105 @@
       </div>
     </footer>
     <!-- #endregion footer -->
+
+    <div class="backdrop">
+      <div class="modal">
+
+        <button class="close-popup" type="button">
+          <svg height="24" width="24">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="popup-title">
+          Leave a review about <span class="color-accent">our chocolate</span>
+        </p>
+
+        <form>
+
+          <div class="input-wrapper">
+            <label for="form-name" class="form-label">Name</label>
+            <div class="input-svg-wrapper">
+              <input
+                type="text"
+                id="form-name"
+                class="input-text"
+                name="name"
+              >
+              <svg height="24" width="24" class="form-icon">
+                <use href="./images/sprite.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="form-email" class="form-label">Email</label>
+            <div class="input-svg-wrapper">
+
+
+
+              <input
+                type="email"
+                class="input-text"
+                id="form-email"
+                name="email"
+              >
+              
+              <svg height="24" width="24" class="form-icon">
+                <use href="./images/sprite.svg#icon-email"></use>
+              </svg>
+
+
+
+              
+            </div>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="form-phone-number" class="form-label">Phone number</label>
+            <div class="input-svg-wrapper">
+              <input
+                type="tel"
+                class="input-text"
+                id="form-phone-number"
+                name="tel"
+              >
+              <svg height="24" width="24" class="form-icon">
+                <use href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="form-comment" class="form-label">Comment</label>
+            <textarea id="form-comment" name="comment" class="input-textarea" placeholder="Some another text"></textarea>
+          </div>
+
+          <div class="checkbox-wrapper">
+  
+            <input 
+              type="checkbox" 
+              name="form-checkbox" 
+              id="form-checkbox"
+              class="native-checkbox visually-hidden"
+            >
+
+            <label for="form-checkbox" class="checkbox-label"> 
+              <span class="custom-checkbox">
+                <svg height="10" width="10" class="checkbox-icon">
+                  <use href="./images/sprite.svg#icon-icon"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the <a href="" class="color-accent">Privacy Policy</a></label>
+
+          </div>
+
+          <button type="submit" class="submit-btn">
+            Send
+          </button>
+          
+        </form>
+
+      </div>
+    </div>
   </body>
 </html>
