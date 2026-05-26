@@ -6,112 +6,73 @@
     <link rel="stylesheet" href="./lesson.css" />
     <title>Lesson</title>
   </head>
-  <body class="container">
-    <h1 class="child">Форми</h1>
+  <body>
+    <h1>
+      Responsive design
+    </h1>
+    <!-- <div class="wrapper">
+      <div class="block elem-1">width: 600px;</div>
+      <div class="block elem-2">max-width: 800px;</div>
+      <div class="block elem-3">max-width: 1000px; min-width: 500px;</div>
+      <div class="block elem-4">width: 100% (default)</div>
+      <div class="block elem-5">width: auto (default)</div>
+    </div> -->
 
-    <form class="form-class">
-
-      <label for="form-name" class="label-class">Name<span class="required-color">*</span></label>
-      <input 
-        type="text" 
-        id="form-name" 
-        class="input-class"
-        placeholder="Serhii"
-        name="name"
-        required
-        title="заповніть поле"
-      >
-
-      <label for="form-phone" class="label-class">Phone<span class="required-color">*</span></label>
-      <input 
-        type="tel"
-        class="input-class"
-        id="form-phone"
-        placeholder="380-111-11-11"
-        name="phone"
-        required
-        title="xxx-xxx-xx-xx"
-      >
-
-      <label for="form-email" class="label-class">Email<span class="required-color">*</span></label>
-      <input 
-        type="email"
-        class="input-class"
-        id="form-email"
-        name="email"
-        placeholder="example@example.com"
-        required
-      >
-
-      <fieldset class="fieldset-group">
-        <legend>Sizes</legend>
-        <ul>
-          <li>
-            <label for="form-size-small">Small</label>
-            <input type="radio" id="form-size-small" name="size" value="s">
+    <section>
+      <div class="container">
+        <h2 class="visually-hidden">
+          Features
+        </h2>
+        <ul class="features-list">
+          <li class="feature-list-item">
+            <div class="feature-item-image-wrapper">
+              <img src="" alt="Strategy">
+            </div>
+            <h3 class="feature-list-subtitle">
+              Strategy
+            </h3>
+            <p class="feature-list-description">
+              Our goal is to identify the business
+problem to walk away with the perfect and creative solution. 
+            </p>
           </li>
-          <li>
-            <label for="form-size-medium">Medium</label>
-            <input type="radio" id="form-size-medium" name="size" value="m" checked>
+          <li class="feature-list-item">
+            <div class="feature-item-image-wrapper">
+              <img src="" alt="Punctuality">
+            </div>
+            <h3 class="feature-list-subtitle">
+              Punctuality
+            </h3>
+            <p class="feature-list-description">
+              Bring the key message to the brand's audience for the best price within the shortest possible time.
+            </p>
           </li>
-          <li>
-            <label for="form-size-large">Large</label>
-            <input type="radio" id="form-size-large" name="size" value="l">
+          <li class="feature-list-item">
+            <div class="feature-item-image-wrapper">
+              <img src="" alt="Diligence">
+            </div>
+            <h3 class="feature-list-subtitle">
+              Diligence
+            </h3>
+            <p class="feature-list-description">
+              Research and confirm brands with the strongest digital growth opportunities and minimize risk.
+            </p>
           </li>
-        </ul>
-      </fieldset>
-
-      <fieldset class="fieldset-group">
-        <legend>ingridients</legend>
-        <ul>
-          <li>
-            <label for="form-ingridient-tomato">Tomato</label>
-            <input type="checkbox" id="form-ingridient-tomato" name="ingridients" value="tomato">
-          </li>
-           <li>
-            <label for="form-ingridient-cheese">Cheese</label>
-            <input type="checkbox" id="form-ingridient-cheese" name="ingridients" value="cheese">
-          </li>
-           <li>
-            <label for="form-ingridient-meat">Meat</label>
-            <input type="checkbox" id="form-ingridient-meat" name="ingridients" value="meat">
+          <li class="feature-list-item">
+            <div class="feature-item-image-wrapper">
+              <img src="" alt="Technologies">
+            </div>
+            <h3 class="feature-list-subtitle">
+              Technologies
+            </h3>
+            <p class="feature-list-description">
+              Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
+            </p>
           </li>
         </ul>
-      </fieldset>
 
-      <label for="form-textarea" class="label-class">Comment</label>
-      <textarea 
-        name="comment" 
-        id="form-textarea" 
-        class="textarea" 
-        placeholder="Leave comment here" 
-        rows="4"
-      ></textarea>
-
-      <select name="city">
-        <optgroup label="West">
-          <option value="lviv">Lviv</option>
-          <option value="ternopil">Ternopil</option>
-        </optgroup>
-        
-        <option value="odesa">Odesa</option>
-        <option value="sambir">Sambir</option>
-      </select>
-
-      <div class="btn-container">
-        <button class="btn btn-submit" type="submit">Submit</button>
-        <button class="btn btn-reset" type="reset">Reset</button>
       </div>
-      
-    </form>
-
-    <div class="box class-1 centred">
-      <div class="box class-2 centred">
-        <div class="box class-3">
-
-        </div>
-      </div>
-    </div>
+    </section>
 
   </body>
 </html>

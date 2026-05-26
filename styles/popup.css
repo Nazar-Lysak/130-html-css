@@ -9,11 +9,23 @@
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     z-index: 99999999999;
+
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    padding: 15px;
+}
+
+.popup-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
 }
 
 .modal {
     position: relative;
-    width: 518px;
+    max-width: 518px;
     height: 80%;
     max-height: 796px;
     padding: 40px;
