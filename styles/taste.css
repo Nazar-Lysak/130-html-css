@@ -11,7 +11,7 @@
 
 .taste-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 32px;
 }
 
@@ -19,8 +19,14 @@
     border: solid 1px #FD9222;
     border-radius: 15px;
     padding: 28px 24px;
-    width: calc((100% - 96px)/4);
     color: #FFFFFF;
+}
+
+.taste-list-img {
+    margin: 0 auto;
+    width: 236px;
+    height: 178px;
+    object-fit: cover;
 }
 
 .taste-list-item:nth-child(even) {
@@ -38,4 +44,22 @@
 
 .taste-list-item img {
     margin-bottom: 36px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .taste-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .taste-list-item {
+        width: calc((100% - 32px) / 2);
+    }
+}
+
+@media screen and (min-width: 1168px) {
+
+    .taste-list-item {
+        width: calc((100% - (32px * 3)) / 4);
+    }
 }

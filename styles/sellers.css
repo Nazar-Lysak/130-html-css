@@ -4,14 +4,18 @@
 
 .top-sellers-list {
     display: flex;
-    column-gap: 16px;
+    gap: 16px;
 }
 
 .top-sellers-list-item {
-    width: calc((100% - 32px) / 3);
     cursor: pointer;
     border-radius: 16px;
     overflow: hidden;
+    display: none;
+}
+
+.top-sellers-list-item:first-child {
+    display: block;
 }
 
 .top-sellers-list-item-content {
@@ -55,4 +59,16 @@
     padding: 0 40px;
     transform: translateY(100%);
     transition: transform 250ms linear;
+}
+
+@media screen and (min-width: 768px) {
+    .top-sellers-list-item:nth-child(2) {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1168px) {
+    .top-sellers-list-item:nth-child(3) {
+        display: block;
+    }
 }

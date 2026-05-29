@@ -17,6 +17,10 @@ a {
     color: initial;
 }
 
+button {
+    cursor: pointer;
+}
+
 h1,
 h2,
 h3,
@@ -30,6 +34,8 @@ p {
 
 img {
     display: block;
+    width: 100%;
+    height: auto;
 }
 
 .visually-hidden {
@@ -47,7 +53,10 @@ img {
 
 /* h1 */
 .main-title {
-    
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
 }
 
 /* h2 */
@@ -66,11 +75,61 @@ img {
 }
 
 .container {
-    max-width: 1168px;    
+    max-width: 375px;    
     padding-left: 16px;
     padding-right: 16px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.button-accent {
+    background-color: #FD9222;
+    border: solid 1px #FD9222;
+    border-radius: 100px;
+    padding: 14px 40px;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+    color: #FD9222;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.button-transperent {
+    background-color: transparent;
+    border: solid 1px #FD9222;
+    border-radius: 100px;
+    padding: 14px 40px;
+    color: #111111;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.button-transperent:hover,
+.button-transperent:focus {
+    color: #FD9222;
+    border-color: #111111;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .main-title {
+        font-size: 28px;
+        max-width: 480px;
+    }
+
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1168px) {
+    .container {
+        max-width: 1188px;
+    }
 }
 
 
