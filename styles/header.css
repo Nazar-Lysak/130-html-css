@@ -14,6 +14,8 @@
     align-items: center;
     fill: transparent;
     stroke: #FD9222;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .header-logo span {
@@ -26,7 +28,7 @@
 
 .header-nav {
     flex-grow: 1;
-    padding-right: 122px;
+    display: none;
 }
 
 .header-nav-list {
@@ -56,7 +58,7 @@
 }
 
 .social-list {
-    display: flex;
+    display: none;
     gap: 14px;
 }
 
@@ -93,5 +95,29 @@
 .social-link:focus {
     fill: #FD9222;
 }
+
+@media screen and (min-width: 768px) {
+    .header-nav  {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .social-list {
+        display: flex;
+    }
+
+    .burger-menu-btn {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1168px) {
+    .header-nav  {
+        justify-content: flex-end;
+        padding-right: 122px;
+    }
+}
+
 
 

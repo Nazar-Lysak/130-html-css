@@ -60,11 +60,19 @@
             </a>
           </li>
         </ul>
+        <button class="burger-menu-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.60001 6C3.60001 5.68174 3.72643 5.37652 3.95148 5.15148C4.17652 4.92643 4.48175 4.8 4.80001 4.8H19.2C19.5183 4.8 19.8235 4.92643 20.0485 5.15148C20.2736 5.37652 20.4 5.68174 20.4 6C20.4 6.31826 20.2736 6.62349 20.0485 6.84853C19.8235 7.07357 19.5183 7.2 19.2 7.2H4.80001C4.48175 7.2 4.17652 7.07357 3.95148 6.84853C3.72643 6.62349 3.60001 6.31826 3.60001 6Z" fill="#2E2F42" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.60001 12C3.60001 11.6817 3.72643 11.3765 3.95148 11.1515C4.17652 10.9264 4.48175 10.8 4.80001 10.8H19.2C19.5183 10.8 19.8235 10.9264 20.0485 11.1515C20.2736 11.3765 20.4 11.6817 20.4 12C20.4 12.3183 20.2736 12.6235 20.0485 12.8485C19.8235 13.0736 19.5183 13.2 19.2 13.2H4.80001C4.48175 13.2 4.17652 13.0736 3.95148 12.8485C3.72643 12.6235 3.60001 12.3183 3.60001 12Z" fill="#2E2F42" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.60001 18C3.60001 17.6817 3.72643 17.3765 3.95148 17.1515C4.17652 16.9264 4.48175 16.8 4.80001 16.8H19.2C19.5183 16.8 19.8235 16.9264 20.0485 17.1515C20.2736 17.3765 20.4 17.6817 20.4 18C20.4 18.3183 20.2736 18.6235 20.0485 18.8485C19.8235 19.0736 19.5183 19.2 19.2 19.2H4.80001C4.48175 19.2 4.17652 19.0736 3.95148 18.8485C3.72643 18.6235 3.60001 18.3183 3.60001 18Z" fill="#2E2F42" />
+          </svg>
+        </button>
       </div>
+      
     </header>
     <!-- #endregion header -->
 
-    <main>
+    <main class="visually-hidden">
       <!-- #region banner --> 
       <section id="section-banner">
         <div class="container banner-container">
@@ -337,7 +345,7 @@
     </main>
 
     <!-- #region footer -->
-    <footer class="page-footer">
+    <footer class="page-footer visually-hidden">
       <div class="container">
         <p>Chocolate a delicious cure for a bad day</p>
         <p>Social networks</p>
@@ -391,8 +399,49 @@
     </footer>
     <!-- #endregion footer -->
     
+    <div class="burger-menu is-open">
+      <button class="burger-menu-close-btn" type="button">x</button>
+      <nav class="burger-menu-nav">
+        <ul>
+          <li>
+            <a href="">Studio</a>
+          </li>
+          <li>
+            <a href="">Portfolio</a>
+          </li>
+          <li>
+            <a href="">Contacts</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <ul>
+          <li>
+            <a href="">link 1</a>
+          </li>
+          <li>
+            <a href="">link 2</a>
+          </li>
+          <li>
+            <a href="">link 3</a>
+          </li>
+          <li>
+            <a href="">link 4</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+
     <!--  popup-open class -->
-    <div class="backdrop popup-open">
+    <div class="backdrop">
       <div class="modal">
 
         <button class="close-popup" type="button">
